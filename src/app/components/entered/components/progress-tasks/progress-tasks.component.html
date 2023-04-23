@@ -1,0 +1,9 @@
+<h2 class="text-center mt-1">Не выполненные задачи</h2>
+<h6 class="text-center mt-1">Не выполненных задач: {{sumTasks}}</h6>
+<div class="input-group w-50 align-center mx-auto" style="margin-top: 0.8%;" *ngFor="let a of progressTasks">
+  <input type="text" class="form-control readonly" placeholder={{a}} aria-label="Имя получателя" aria-describedby="basic-addon2" readonly>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" (click)="confirmTask(a)">Выполненно!</button>
+    <button class="btn btn-outline-secondary" type="button" (click)="deleteTask(a)">Удалить</button>
+  </div>
+</div>

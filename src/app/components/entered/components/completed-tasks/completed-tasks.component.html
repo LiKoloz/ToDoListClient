@@ -1,0 +1,10 @@
+<h2 class="text-center mt-1">Не выполненные задачи</h2>
+<h6 class="text-center mt-1">Вполненных задач: {{sumTasks}}</h6>
+<div class=" text-center mt-1 mx-auto ">
+  <button type="button" class="btn btn-primary mt-1" (click)="removeAllCompleted()">Очистить</button>
+ </div>
+<div class="input-group w-50 align-center mx-auto" style="margin-top: 0.8%;" *ngFor="let a of completedTasks">
+  <input type="text" class="form-control readonly border-success rounded-pill" placeholder={{a}} aria-label="Имя получателя" aria-describedby="basic-addon2" readonly>
+  <div class="input-group-append">
+  </div>
+</div>

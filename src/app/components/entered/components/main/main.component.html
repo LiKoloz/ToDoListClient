@@ -1,0 +1,14 @@
+<div class="row ">
+  <div class="col justify-content-md-center text-center" style="margin-top: 0.5%;">
+    <h3 class="align-center">Задачи выполняются</h3>
+    <div class="d-flex flex-column" *ngFor="let a of progressTasks">
+      <div class="p-2 border border-dark rounded-pill" style="margin-top: 0.8%; margin-left: 6%; margin-right: 6%;">{{a}}</div>
+    </div>
+  </div>
+  <div class="col text-center justify-content-md-center" style="margin-top: 0.5%;">
+    <h3>Выполненные задачи</h3>
+    <div class="d-flex flex-column" *ngFor="let a of completedTasks">
+      <div class="p-2 border border border-success rounded-pill" style="margin-top: 0.8%; margin-left: 6%; margin-right: 6%;">{{a}}</div>
+    </div>
+  </div>
+</div>
